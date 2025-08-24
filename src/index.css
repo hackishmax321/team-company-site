@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --color-primary: #043068;
+  --color-primary-bg: #083787;
+  --color-secondary: #177a5c;
+  --color-secondary-bg: #5ed558;
+  --color-dark: rgba(28, 20, 5, 0.773);
+  --color-text: #fff;
+  --color-muted: #9fa5a5;
+  --color-success: #33c648;
+  --color-success-rgb:51, 198, 72;
+  --color-warning: #ffa500;
+  --color-danger: #fc605b;
+  --color-white: #ffffff;
+  --color-ui-1: #171717;
+  --color-ui-2: #212121;
+  --color-ui-2-rgb: 33, 33, 33;
+  --transition: all 0.4s ease-in-out;
+  --gray-border: solid 0.5px lightgray;
+  --border-radius-3: 1.2rem;
+  --border-radius-5: 51px;
+  --gradient-1: linear-gradient(
+    260deg,
+    var(--color-dark) 0%,
+    var(--color-primary) 100%
+  );
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+  --border-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+    /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+  --card-primary-shadow: var(--border-shadow),
+    0 0 30px rgba(var(--color-primary-rgb), 0.03);
+  --polygon: polygon(
+    50px 0%,
+    100% 0,
+    100% calc(100% - 50px),
+    calc(100% - 50px) 100%,
+    0 100%,
+    0% 50px
+  );
+  --polygon-bevel: polygon(
+    50px 0%,
+    calc(100% - 50px) 0%,
+    100% 50px,
+    100% calc(100% - 50px),
+    calc(100% - 50px) 100%,
+    50px 100%,
+    0% calc(100% - 50px),
+    0% 50px
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
