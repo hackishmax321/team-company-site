@@ -7,25 +7,25 @@ const Services = () => {
       title: "Web Development",
       description: "Custom websites and web applications built with modern technologies like React, Node.js, and cloud infrastructure.",
       icon: "💻",
-      video: "/videos/sample.mp4"
+      video: "/videos/web.mp4"
     },
     {
       title: "IoT Development",
       description: "Internet of Things solutions connecting devices, sensors, and systems for smart automation and data collection.",
       icon: "🌐",
-      video: "/videos/sample.mp4"
+      video: "/videos/iot.mp4"
     },
     {
       title: "App Development",
       description: "Native and cross-platform mobile applications for iOS and Android with seamless user experiences.",
       icon: "📱",
-      video: "/videos/sample.mp4"
+      video: "/videos/mobile2.mp4"
     },
     {
       title: "Consulting",
       description: "Strategic guidance to help your business leverage technology effectively and maximize digital transformation.",
       icon: "📊",
-      video: "/videos/sample.mp4"
+      video: "/videos/consult.mp4"
     }
   ];
 

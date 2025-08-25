@@ -1,0 +1,337 @@
+/* Chatbot container */
+.chatbot-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+/* Floating button */
+.chatbot-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.chatbot-button:hover {
+  background-color: #3a56d4;
+  transform: scale(1.1);
+}
+
+/* Chatbot window */
+.chatbot-window {
+  /* width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: white; */
+  position: absolute;
+  right: 20px;
+  bottom: 85px;
+}
+
+/* Header */
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #4361ee;
+  color: white;
+}
+
+.chatbot-header-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.chatbot-close-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Message bubbles */
+.react-chatbot-kit-chat-bot-message {
+  margin-left: 0;
+  max-width: 80%;
+}
+
+.react-chatbot-kit-chat-bot-message-container {
+  display: flex;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4361ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.react-chatbot-kit-chat-bot-avatar-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  background-color: #4361ee;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+}
+
+.react-chatbot-kit-user-chat-message-container {
+  display: flex;
+  margin: 15px 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.react-chatbot-kit-user-avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.react-chatbot-kit-user-avatar-icon {
+  color: #555;
+  font-size: 18px;
+}
+
+.react-chatbot-kit-user-chat-message {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border-bottom-right-radius: 0;
+}
+
+/* Input area */
+.react-chatbot-kit-chat-input-container {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.react-chatbot-kit-chat-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.react-chatbot-kit-chat-btn-send {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.react-chatbot-kit-chat-btn-send-icon {
+  font-size: 18px;
+}
+
+
+/* Role selection buttons */
+.role-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #4361ee;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-btn:hover {
+  background-color: #3a56d4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.role-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Question buttons */
+.question-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.question-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #4361ee;
+  color: #4361ee;
+}
+
+.question-btn:active {
+  background-color: #e9e9e9;
+}
+
+/* For smaller screens */
+@media (max-width: 480px) {
+  .role-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .question-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+
+.role-selector, .common-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.role-btn, .question-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-btn {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+}
+
+.question-btn {
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.role-btn:hover, .question-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.voice-settings {
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.voice-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.voice-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-selector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.react-chatbot-kit-chat-btn-voice {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.react-chatbot-kit-chat-btn-send:hover,
+.react-chatbot-kit-chat-btn-voice:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Input field - modified */
+.react-chatbot-kit-chat-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  min-width: 0; /* Allows flex items to shrink properly */
+}
+

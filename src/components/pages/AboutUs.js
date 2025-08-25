@@ -11,19 +11,42 @@ const AboutUs = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <h2>Our Story</h2>
-            <p>Founded in 2010, we have been helping businesses transform their digital presence and achieve their goals. Our team of experts is dedicated to delivering exceptional results for our clients.</p>
+            <h2>Summary</h2>
+            <p>Founded in 2023, we have been helping businesses transform their digital presence and achieve their goals. Our team of experts is dedicated to delivering exceptional results for our clients.</p>
             
-            <h2>Our Mission</h2>
-            <p>To provide innovative and effective solutions that help businesses thrive in the digital landscape. We believe in building long-term relationships with our clients based on trust and results.</p>
-            
-            <h2>Our Values</h2>
-            <ul>
-              <li>Quality in everything we do</li>
-              <li>Innovation and creativity</li>
-              <li>Customer satisfaction</li>
-              <li>Integrity and transparency</li>
-            </ul>
+            <div className="values-section">
+              <h2>Our Values</h2>
+              <ul className="values-list">
+                <li className="value-item">
+                  <div className="value-icon">✓</div>
+                  <div className="value-content">
+                    <h4>Quality in everything we do</h4>
+                    <p>We never compromise on quality and strive for excellence in every project</p>
+                  </div>
+                </li>
+                <li className="value-item">
+                  <div className="value-icon">🚀</div>
+                  <div className="value-content">
+                    <h4>Innovation and creativity</h4>
+                    <p>Pushing boundaries with creative solutions and innovative approaches</p>
+                  </div>
+                </li>
+                <li className="value-item">
+                  <div className="value-icon">😊</div>
+                  <div className="value-content">
+                    <h4>Customer satisfaction</h4>
+                    <p>Your success is our success - we're committed to exceeding expectations</p>
+                  </div>
+                </li>
+                <li className="value-item">
+                  <div className="value-icon">🔍</div>
+                  <div className="value-content">
+                    <h4>Integrity and transparency</h4>
+                    <p>Honest communication and ethical practices in all our dealings</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           
           <div className="about-image">
