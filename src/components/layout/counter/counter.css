@@ -1,0 +1,187 @@
+/* components/ProjectsCounter.css */
+.projects-counter-section {
+  padding: 4rem 0;
+  background: var(--color-secondary);
+  color: var(--color-text);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.projects-counter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.total-projects-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius-3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+}
+
+.total-projects-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.total-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-secondary-bg);
+}
+
+.total-count {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, var(--color-text), var(--color-secondary-bg));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.total-label {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.categories-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-3);
+  transition: var(--transition);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.category-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.category-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-secondary-bg);
+  min-width: 50px;
+}
+
+.category-details {
+  text-align: left;
+}
+
+.category-count {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-type {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+  .projects-counter-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .total-projects-card {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .total-count {
+    font-size: 3.5rem;
+  }
+  
+  .category-item {
+    padding: 1.25rem;
+  }
+  
+  .category-icon {
+    font-size: 1.8rem;
+    min-width: 45px;
+  }
+  
+  .category-count {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-counter-section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .total-projects-card {
+    padding: 2rem 1rem;
+  }
+  
+  .total-icon {
+    font-size: 2.5rem;
+  }
+  
+  .total-count {
+    font-size: 3rem;
+  }
+  
+  .total-label {
+    font-size: 1.1rem;
+  }
+  
+  .category-item {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .category-icon {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.8rem;
+  }
+  
+  .category-details {
+    text-align: center;
+  }
+  
+  .category-count {
+    font-size: 1.5rem;
+  }
+  
+  .category-type {
+    font-size: 0.95rem;
+  }
+}

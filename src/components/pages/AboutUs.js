@@ -1,5 +1,6 @@
 // pages/AboutUs.js
 import React from 'react';
+import CompanyInfo from '../layout/company/Company';
 
 const AboutUs = () => {
   return (
@@ -30,6 +31,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <CompanyInfo />
     </div>
   );
 };
