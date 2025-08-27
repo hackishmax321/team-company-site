@@ -39,17 +39,22 @@ const ContactUs = () => {
             
             <div className="contact-detail">
               <h3>Address</h3>
-              <p>123 Business Street, City, Country</p>
+              <p>1/195, Walakubura, Nagoda, Galle, Sri Lanka</p>
             </div>
             
             <div className="contact-detail">
               <h3>Phone</h3>
-              <p>+1 (123) 456-7890</p>
+              <p>+61 451 409 797</p>
+            </div>
+
+            <div className="contact-detail">
+              <h3>Whatsapp</h3>
+              <p>+94 77 287 2488</p>
             </div>
             
             <div className="contact-detail">
               <h3>Email</h3>
-              <p>info@business.com</p>
+              <p>softwaretechsolutions822@gmail.com</p>
             </div>
           </div>
           
