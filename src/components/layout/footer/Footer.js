@@ -33,9 +33,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Info</h3>
           <ul>
-            <li>123 Business Street, City</li>
-            <li>Phone: (123) 456-7890</li>
-            <li>Email: info@business.com</li>
+            <li>1/195, Walakubura, Nagoda, Galle, Sri Lanka</li>
+            <li>Phone: +61 451 409 797</li>
+            <li><a href="https://wa.me/94772872488">WhatsApp: +94 77 287 2488</a></li>
+            <li>Email: <a href="mailto:softwaretechsolutions822@gmail.com">softwaretechsolutions822@gmail.com</a></li>
             <li>Hours: Mon-Fri 9am-5pm</li>
           </ul>
         </div>

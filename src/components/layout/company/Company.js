@@ -14,8 +14,8 @@ const CompanyInfo = () => {
   const teamMembers = [
     {
       role: "Founder & IoT Developer",
-      name: "Kavinda xxx",
-      email: "k@company.com",
+      name: "Kavinda Maduranga",
+      email: "kavindamaduranga822@gmail.com",
       website: "https://k.com",
       linkedin: "https://linkedin.com/in/alexjohnson",
       bio: "Visionary leader with 15+ years of experience in tech entrepreneurship and digital innovation."
