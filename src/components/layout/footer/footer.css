@@ -1,0 +1,224 @@
+/* components/Footer.css */
+.footer {
+  background-image: url('city_scape3.png');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text);
+  padding: 3rem 0 1rem;
+  position: relative;
+  overflow: hidden; /* Ensure vehicles stay within footer */
+}
+
+/* Optional overlay to improve text readability */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-ui-1);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.footer-container,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section a {
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-section a:hover {
+  color: var(--color-secondary-bg);
+  padding-left: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-ui-2);
+  border-radius: 50%;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-ui-2);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* Vehicle animations */
+.vehicles-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Adjust based on your vehicle image heights */
+  z-index: 2;
+}
+
+.vehicle {
+  position: absolute;
+  height: 40px; /* Default height, will be overridden by specific classes */
+  width: auto;
+  image-rendering: high-quality;
+}
+
+/* Car 1 - right to left with medium speed */
+.car-1 {
+  bottom: 5px;
+  height: 35px; /* Adjust based on your car_1.png dimensions */
+  left: 100%; /* Start from right side */
+  animation: moveRightToLeft 15s linear infinite;
+}
+
+/* Car 2 - left to right with faster speed */
+.car-2 {
+  bottom: 5px;
+  height: 30px; /* Adjust based on your car2.png dimensions */
+  right: 100%; /* Start from left side */
+  animation: moveLeftToRight 12s linear infinite;
+  animation-delay: 2s; /* Stagger animation start */
+}
+
+/* Bus - right to left with slow speed */
+.bus {
+  bottom: 5px;
+  height: 45px; /* Adjust based on your bus.png dimensions */
+  left: 100%; /* Start from right side */
+  animation: moveRightToLeftSlow 25s linear infinite;
+  animation-delay: 5s; /* Stagger animation start */
+}
+
+/* Animation keyframes */
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1600px)); /* Move completely off-screen */
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + 1600px)); /* Move completely off-screen */
+  }
+}
+
+@keyframes moveRightToLeftSlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1600px)); /* Move completely off-screen */
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  /* Adjust vehicle sizes and animation for mobile */
+  .vehicles-container {
+    height: 50px;
+  }
+  
+  .vehicle {
+    height: 30px;
+  }
+  
+  .car-1 {
+    height: 25px;
+    animation: moveRightToLeft 8s linear infinite;
+  }
+  
+  .car-2 {
+    height: 22px;
+    animation: moveLeftToRight 8s linear infinite;
+  }
+  
+  .bus {
+    height: 30px;
+    animation: moveRightToLeftSlow 18s linear infinite;
+  }
+}
