@@ -50,7 +50,7 @@ const AboutUs = () => {
           </div>
           
           <div className="about-image">
-            <div className="placeholder-image">Team Photo</div>
+            <div className="placeholder-image"></div>
           </div>
         </div>
       </div>

@@ -767,6 +767,8 @@
 
 .placeholder-image {
   background-color: var(--color-muted);
+  background: url('https://www.lastingdynamics.com/wp-content/uploads/2021/08/custom-software-development-firm.jpg');
+  background-size: cover;
   height: 300px;
   display: flex;
   align-items: center;
