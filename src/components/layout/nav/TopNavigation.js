@@ -26,7 +26,7 @@ const TopNavigation = () => {
       <div className="nav-container">
         <div className="nav-logo">
           <Link to="/" onClick={closeMenu}>
-            <h2>Software Tech</h2>
+            <h2>Software Tech Solutions</h2>
           </Link>
         </div>
         

@@ -13,12 +13,12 @@ const CompanyInfo = () => {
   // Team members data
   const teamMembers = [
     {
-      role: "Founder & IoT Developer",
-      name: "Kavinda Maduranga",
+      role: "Founder & Mobile app / IoT Developer",
+      name: "Kavinda Kariyawasam",
       email: "kavindamaduranga822@gmail.com",
       website: "https://k.com",
       linkedin: "https://linkedin.com/in/alexjohnson",
-      bio: "Visionary leader with 15+ years of experience in tech entrepreneurship and digital innovation."
+      bio: "Turning bold ideas into digital realities that don’t just power businesses today, but shape the way the world transforms tomorrow."
     },
     {
       role: "Lead Developer",
