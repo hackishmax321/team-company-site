@@ -513,6 +513,10 @@
   margin: 3rem 0;
 }
 
+Link, a {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 2rem;
   color: var(--color-primary);

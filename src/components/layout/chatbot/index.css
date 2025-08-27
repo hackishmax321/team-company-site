@@ -11,7 +11,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
   border: none;
   cursor: pointer;
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   padding: 15px;
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
 }
 
@@ -83,13 +83,14 @@
   display: flex;
   margin: 15px 0;
   align-items: flex-start;
+  /* background-color: var(--color-primary-bg) !important; */
 }
 
 .react-chatbot-kit-chat-bot-avatar-container {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +103,7 @@
 }
 
 .react-chatbot-kit-chat-bot-message {
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
   padding: 10px 15px;
   border-radius: 15px;
@@ -161,7 +162,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
   border: none;
   cursor: pointer;
@@ -185,7 +186,7 @@
   margin: 8px 0;
   border: none;
   border-radius: 8px;
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -225,8 +226,8 @@
 
 .question-btn:hover {
   background-color: #f5f5f5;
-  border-color: #4361ee;
-  color: #4361ee;
+  border-color: var(--color-secondary-bg);
+  color: var(--color-secondary-bg);
 }
 
 .question-btn:active {
@@ -262,7 +263,7 @@
 }
 
 .role-btn {
-  background-color: #4361ee;
+  background-color: var(--color-secondary-bg);
   color: white;
   border: none;
 }

@@ -9,6 +9,7 @@ import Projects from './components/pages/Projects';
 import AboutUs from './components/pages/AboutUs';
 import ContactUs from './components/pages/ContactUs';
 import NotFound from './components/pages/NotFound';
+import Chatbot from './components/layout/chatbot';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        <Chatbot />
         <Footer />
       </div>
     </Router>

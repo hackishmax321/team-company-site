@@ -12,11 +12,11 @@ const config = {
   initialMessages: [
     {
       id: 1,
-      message: 'Hello! I\'m ProjectFlow Assistant. How can I help you today?',
+      message: 'Hello! I\'m Bot Assistant. How can I help you today?',
       type: 'bot',
     },
   ],
-  botName: 'ProjectFlow Assistant',
+  botName: 'Bot Assistant',
   customStyles: {
     botMessageBox: {
       backgroundColor: '#4361ee',
@@ -29,7 +29,7 @@ const config = {
     header: () => (
       <div className="chatbot-header">
         <FaRobot className="chatbot-header-icon" />
-        <h3>ProjectFlow Assistant</h3>
+        <h3>Bot Assistant</h3>
         <button className="chatbot-close-btn">
           <FiX />
         </button>

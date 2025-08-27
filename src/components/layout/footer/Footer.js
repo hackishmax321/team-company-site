@@ -40,6 +40,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <div className="vehicles-container">
+        <img src="/images/background/car.png" alt="Car" className="vehicle car-1" />
+        <img src="/images/background/car2.png" alt="Car 2" className="vehicle car-2" />
+        <img src="/images/background/bus.png" alt="Bus" className="vehicle bus" />
+      </div>
       
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Business Name. All rights reserved.</p>
